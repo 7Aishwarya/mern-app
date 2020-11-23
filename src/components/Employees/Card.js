@@ -8,15 +8,15 @@ var color;
 function Card(props) {
   status = props.status;
   if(status === 'Working From Home')
-    color = 'green';
+    color = '#bdb76b';
   if(status === 'At Office')
-    color = 'red';
+    color = '#3cb371';
   if(status === 'On Leave')
-    color = 'pink';
+    color = '#cd5c5c';
   if(status === 'On Sick Leave')
-    color = 'yellow';
+    color = '#ffd700';
   if(status === 'Business Trip')
-    color = 'purple';
+    color = '#4682b4';
   
   return (
     <div style={{background: color}} className="cardemployee">

@@ -3,7 +3,7 @@ import "./geolocation.css";
 import Header from "../Header";
 import Map1 from "./map";
 import axios from "axios";
-import img from "./img.jpg";
+import img from "./img.png";
 
 class GeoLocation extends React.Component {
     constructor(props) {
@@ -103,16 +103,15 @@ class GeoLocation extends React.Component {
                 latitude: {this.state.latitude}</h2>
                 <h2>
                 longitude: {this.state.longitude}</h2>
-                <div class="mapImg">
+                <br />
                 {
                     (this.state.latitude!=="N/A") && (this.state.longitude!=="N/A") ?
                     
                     <Map1 />
                     :
-                    <img class="imgalt" src={img} alt="Find Geolocation of your Employees"/>
+                  <img class="imgalt" src={img} alt="Find Geolocation of your Employees"/>
 
                 }
-                </div>
             </div>
         )
     }

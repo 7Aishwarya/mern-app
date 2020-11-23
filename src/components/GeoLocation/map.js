@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
 import "./geolocation.css";
+import { Center } from "devextreme-react/map";
 
 const mapStyles = {
-  width: "50%",
-  height: "53%"
+  width: "100%",
+  height: "98%"
 };
 
 class Map1 extends Component {
@@ -17,8 +18,7 @@ class Map1 extends Component {
 
   render() {
     return (
-      <div>
-        <Map className="mapImginside"
+        <Map className ="mapImgInside"
           google={this.props.google}
           zoom={14}
           style={mapStyles}
@@ -27,9 +27,9 @@ class Map1 extends Component {
             lng: 80.9461592
           }}
         >
+          
           <Marker onClick={this.onMarkerClick} name={"This is test name"} />
         </Map>
-      </div>
     );
   }
 }

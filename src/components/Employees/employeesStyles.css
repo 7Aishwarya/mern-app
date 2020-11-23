@@ -16,9 +16,12 @@ body{
   margin: 50px 50px;
   height: 4.5rem;
   width: 25rem;
-  box-shadow: 0 2px 5px #ccc;
   text-align: left;
   background-color: #ffc100;
+}
+
+.cardemployee:hover {
+  box-shadow: 0 2px 5px #ccc;
 }
 
 .top {

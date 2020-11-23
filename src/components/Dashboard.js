@@ -27,6 +27,7 @@ function Dashboard(props) {
   return (
     <div class="dashboardCard">
       <Header />
+      <div class = "dashboardWelcomeText">Welcome Fella !!</div>
       <div class="tables">
         <table cellspacing="4rem">
           <tbody>
